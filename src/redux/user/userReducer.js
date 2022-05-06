@@ -1,7 +1,10 @@
 import { SET_USER } from './userTypes'
 
 const initialState = {
-    userName: 'Sivaprathap'
+    userName: 'Sivaprathap',
+    item1: "home",
+    item2: "projects",
+    item3: "channel"
 }
 
 const userReducer = (state = initialState, action) => {

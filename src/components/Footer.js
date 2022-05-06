@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 const Footer = (props) => {
   return (
     <div className='footer'>
-      <p>{props.userName}</p>
+      <p>{props.userName}, form India</p>
     </div>
   )
 }

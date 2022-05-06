@@ -9,10 +9,10 @@ const MainContent = (props) => {
     <div className='main-content'>
       <form className='main-content-form' onSubmit={(event) => {
           event.preventDefault();
-          props.setUser(name)
-          console.log(name)
+          props.setUser(name);
+          setName('');
       }}>
-        <input type="text" onChange={event => setName(event.target.value)} />
+        <input type="text" value={name} onChange={event => setName(event.target.value)} />
         <button type='submit'>Submit</button>
       </form>
     </div>
